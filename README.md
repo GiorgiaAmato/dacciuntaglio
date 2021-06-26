@@ -13,7 +13,7 @@ Tema hair&beauty sviluppato appositamente in php.
 Web Site: https://dacciuntaglio.netsons.org/
 
 ### Screenshot
-![Image text](img/Screenshot website.png)
+[Image text](img/Screenshot website.png)
 
 ## Built With
 * [HTML5](https://developer.mozilla.org/it/docs/Web/HTML)
