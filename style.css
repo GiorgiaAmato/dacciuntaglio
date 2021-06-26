@@ -1,0 +1,635 @@
+/*
+Theme Name: Beauty & Hairstyle
+Theme URI: https://wordpress.org/themes/beauty-hairstyle/
+Author: Giorgia Amato
+Author URI: https://giorgiaamato.github.io/codingiorgia/
+Text Domain: beauty-hairstyle
+Description:
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-patterns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: #fff;
+}
+
+/*---------Layout ----------*/
+
+a {text-decoration: none;}
+a:hover{color: #333;}
+h1{margin:0;color: #fff; font-weight: 600; font-size: 60px;}
+h2{margin: 0; color:#fff; font-weight: 400; font-size: 20px;}
+h3{margin: 0; color:#21aabd; font-weight: 400; font-size: 25px;}
+button {color:#fff; background-color: #21aabd; padding: 10px 15px;border-radius: 5px; border: none;}
+
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*HEADER*/
+.header {
+    padding: 20px;
+    background-color: #eee;
+}
+
+.header__logo{
+    color: #333;
+    text-decoration: none;
+    float: left;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Mountains of Christmas', cursive;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo {
+    width: 100px;
+    height: auto;
+}
+
+.header__menu {
+    padding: 20px;
+    margin: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.menu-item {
+    display: inline-block;
+    
+}
+
+.menu-item a {
+    padding: 5px 10px; 
+    color: #333;
+}
+
+.header__menu_item_button {
+    background-color: #21aabd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+}
+
+#menu-item-128 a{
+    color:#fff; 
+    background-color: #21aabd; 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    border: none;
+}
+
+.header__icon-bar {
+    display: none;
+}
+
+.cover {
+    background-image: url(http://dacciuntaglio.netsons.org/wp-content/uploads/2021/06/cover.jpg); 
+    background-size: cover; background-repeat: no-repeat; background-position-y: center; background-position-x:center;
+    height: 90vh;
+    margin-bottom: 100px;
+}
+
+.cover-page{
+    height: 40vh;
+}
+
+.cover__shadow {
+    background-color:rgba(0,0,0,0.5);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover__shadow-page {
+    height: 40vh;
+}
+
+/*CONTENT ABOUT*/
+.content {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.content__about {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px 0 0;
+}
+
+.content__img{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content__img img {
+    width: auto;
+}
+
+
+/*SERVICE*/
+
+.service{
+    height: auto;
+    margin-bottom: 100px;
+    background-color: #eee;
+    padding: 25px;
+}
+
+.service__title {
+    text-align: center;
+    margin: 20px;
+}
+
+.service__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service__card {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:25px;
+    width: 25%;
+}
+
+
+
+/* contenitore base */
+.service__card_img {
+    width: auto;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    -webkit-box-shadow: 2px 2px 50px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 50px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 50px rgba(0,0,0,0.6);
+}
+ 
+/* immagine al interno del contenitore */
+.service__card_img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+ 
+/* contenitore con didascalia */
+.service__card_img .image-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Open Sans',sans-serif;
+    text-align:justify;
+}
+ 
+/* titolo */
+.image-caption h3 {
+    margin-top: 50px;
+    color: #eee;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 40px;
+}
+
+/* descrizione dell'immagine  */
+
+.image-caption p {
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+hr {
+    margin:20px;
+}
+
+/* animazione da basso */
+.service__card_img .caption-1 {
+    bottom: -350px;
+    transition: all 0.5s;
+}
+.service__card_img:hover .caption-1 {
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+
+
+
+
+/*COME RAGGIUNGERCI-CONTATTACI*/
+.map,
+.contact {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+    background-color: #eee;
+}
+
+.contact {
+    background-color: #333;
+}
+
+.contact .contact__text p {
+    color: white;
+}
+
+.map__text,
+.contact__text {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact__text {
+    justify-content: flex-start;
+    padding-top:0;
+
+}
+
+.map__container,
+.contact__container {
+    width: 50%;
+    height: 80vh;
+}
+
+.contact__container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+/*Custum Contact Form*/
+
+.wpcf7-form {
+    padding: 30px;
+    color: white;
+    margin: 10px;
+}
+
+.wpcf7-form-control {
+    margin-bottom: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 70%;
+}
+
+.wpcf7-checkbox,
+.wpcf7-radio {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wpcf7-textarea {
+    padding:5px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+    background-color: #eee;
+    outline: none;
+}
+
+
+.wpcf7-submit{
+    color:#fff; 
+    background-color: #21aabd; 
+    padding: 10px 25px;
+    border-radius: 5px; 
+    border: none;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/*FOOTER*/
+.footer-container {
+    background-color: #333;
+    height: auto;
+}
+
+.footer__column {
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.column__content {
+    text-align: center;
+    flex-basis: 33.33%;
+    padding: 50px;
+    border-right: 2px solid #fff;
+    margin-top: 15px;
+}
+
+.socials img {
+  height: 35px;
+  width: 35x;
+  margin: 20px;
+}
+
+.socials img:hover{
+    transform: scale(1.3);
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__menu .menu-item a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.footer__menu .menu-item a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer__menu_item_button {
+    margin: 20px;
+}
+
+.footer__menu_item_button a{
+    color: #fff;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.footer__copy {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------
+Smartphone
+------------------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+body{width: 100vw;}
+.flex-container {
+    display: block;
+}
+
+/*HEADER*/
+
+.header{    
+    width: 100vw;
+}
+
+.header__menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    margin-top: 25px;
+    border-bottom: 1px solid #666;
+}
+
+#menu-item-128 a{
+    text-align:center;
+    margin-top:50px;
+}
+
+.header__icon-bar {
+    float: right;
+    text-decoration: none;
+    display: block;
+}
+
+.header__icon-bar span {
+    display: block;
+    background-color: #333;
+    height: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.show-menu {
+    height: 100vh;
+    overflow: auto;
+}
+
+/*COVER*/
+.cover{
+    margin-bottom: 20px;
+}
+
+/*CONTENT*/
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.content__about {
+    width: 100%;
+    border: none;
+    margin:0;
+    padding: 40px;
+    height: auto;
+}
+
+.content__img {
+    width: 90vw;
+    height: auto;
+}
+
+.content__img img {
+    width: 70%;
+}
+
+
+/*SERVICE*/
+.service__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.service__card{
+    width: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.service__card_img img{
+    width: auto;
+    height: 100%;
+}
+
+
+/* COME RAGGIUNGERCI - CONTATTACI*/
+
+.contact,
+.map {
+    display:block;
+    height:auto;
+}
+
+.contact__text,
+.map__text {
+    width: 100%;
+    height:auto;
+}
+
+.contact__container,
+.map__container {
+    width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.map__container {
+    height:50vh;
+}
+
+/*FOOTER*/
+.footer__column {
+    display: block;
+}
+
+.column__content{
+    padding-bottom: 25px;
+}
+
+}
+
+
+
+
+
+/* Clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*Moving Letters*/
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+  opacity: 0.1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkgrey;
+}
