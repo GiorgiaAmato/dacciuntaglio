@@ -13,7 +13,7 @@ Tema hair&beauty sviluppato appositamente in php.
 Web Site: https://dacciuntaglio.netsons.org/
 
 ### Screenshot
-![Image text](img/Countergif.gif)
+![Image text](img/Screenshot website.png)
 
 ## Built With
 * [HTML5](https://developer.mozilla.org/it/docs/Web/HTML)
@@ -22,7 +22,7 @@ Web Site: https://dacciuntaglio.netsons.org/
 * [PHP](https://www.php.net/)
 
 ## License
-Distributed under the MIT License. See [LICENSE](https://github.com/GiorgiaAmato/JavaScript_Counter/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/GiorgiaAmato/dacciuntaglio/blob/main/LICENSE) for more information.
 
 ## Contact
 Giorgia Amato - amatogiorgia1@gmail.com <br>
